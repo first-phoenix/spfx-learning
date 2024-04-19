@@ -1,13 +1,23 @@
+/* index.css */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div {
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
 }
+
+h2 {
+  margin-top: 0;
+}
+
+/* Remove text decoration (such as underlines) from all anchor tags */
+a {
+  text-decoration: none; /* Removes any text decoration (underlines) from links */
+  color: inherit; /* Optionally set the link color to inherit the color from its parent element */
+}
+
+

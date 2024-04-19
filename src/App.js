@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { HashRouter, Route, Routes } from "react-router-dom";
+import ParentComponent from './components/ParentComponent.tsx';
+import ChildComponent from './components/ChildComponent';
+import PromisesAsyncAwait from './components/PromisesAsyncAwait';
+import FluentUI from './components/FluentUI.tsx';
+import { FluentProvider, webLightTheme } from '@fluentui/react-components';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <FluentProvider theme={webLightTheme}>
+    <div>
+      <Routes>
+        <Route exact path="/" Component={ParentComponent} />
+        <Route exact path="/child" Component={ChildComponent} />
+        <Route exact path="/promise" Component={PromisesAsyncAwait} />
+        <Route exact path="/fluentui" Component={FluentUI} />
+      </Routes>
+      {/* <ParentComponent/> */}
     </div>
+    </FluentProvider>
   );
 }
 
