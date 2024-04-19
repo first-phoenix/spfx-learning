@@ -7,6 +7,74 @@
   pointer-events: none;
 }
 
+.MainApp{
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid rgb(255, 67, 139);
+  background-color: rgb(255, 199, 231);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.MainApp:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ChildPage{
+  border: 1px solid rgb(218, 11, 255);
+  background-color: #f0c9ff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ChildPage:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.ParentPage{
+  padding: 10px;
+  margin: 20px;
+  background-color: #feedff;
+  border: 1px solid rgb(251, 11, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ParentPage:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.PromisePage{
+  padding: 10px;
+  margin: 20px;
+  background-color: #d8baff;
+  border: 1px solid rgb(170, 90, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.PromisePage:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.FluentUIPage{
+  padding: 10px;
+  margin: 20px;
+  background-color: #d6dcff;
+  border: 1px solid rgb(111, 108, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.FluentUIPage:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

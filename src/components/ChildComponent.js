@@ -5,7 +5,7 @@ import { Button, Text, Dropdown, Option, makeStyles, shorthands, useId } from '@
 
 function ChildComponent({ data, updateData }) {
   return (
-    <div>
+    <div className='ChildPage'>
       <Button appearance="primary"><Link to="/">Go to Parent</Link></Button>
 
       <h2>Child Component</h2>

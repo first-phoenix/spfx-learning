@@ -5,12 +5,13 @@ import ChildComponent from './components/ChildComponent';
 import PromisesAsyncAwait from './components/PromisesAsyncAwait';
 import FluentUI from './components/FluentUI.tsx';
 import { FluentProvider, webLightTheme } from '@fluentui/react-components';
+import './App.css'
 
 
 function App() {
   return (
     <FluentProvider theme={webLightTheme}>
-    <div>
+    <div className='MainApp'>
       <Routes>
         <Route exact path="/" Component={ParentComponent} />
         <Route exact path="/child" Component={ChildComponent} />

@@ -60,7 +60,7 @@ function PromisesAsyncAwait() {
   };
 
   return (
-    <div>
+    <div className='PromisePage'>
       <div>
         <Menu>
         <MenuTrigger disableButtonEnhancement>
@@ -69,9 +69,10 @@ function PromisesAsyncAwait() {
 
         <MenuPopover>
           <MenuList>
-            <MenuItem><Link to="/child">Go to Child</Link></MenuItem>
-            <MenuItem><Link to="/promise">Go to PromisesAsyncAwait</Link></MenuItem>
-            <MenuItem><Link to="/fluentui">Go to FluentUI</Link></MenuItem>
+            <Link to="/"><MenuItem>Go to Parent</MenuItem></Link>
+            <Link to="/child"><MenuItem>Go to Child</MenuItem></Link>
+            <Link to="/promise"><MenuItem>Go to PromisesAsyncAwait</MenuItem></Link>
+            <Link to="/fluentui"><MenuItem>Go to FluentUI</MenuItem></Link>
           </MenuList>
         </MenuPopover>
       </Menu>

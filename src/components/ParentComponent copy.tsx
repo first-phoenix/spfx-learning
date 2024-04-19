@@ -13,7 +13,7 @@ function ParentComponent() {
   };
 
   return (
-    <div className='ParentPage'>
+    <div>
       <h2>Parent Component</h2>
       <p>Data: {data}</p>
 
